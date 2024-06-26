@@ -5,6 +5,7 @@
 - [x] 절대 경로 설정
 - [x] prettier 설치 및 룰 설정
 - [x] eslint 설치 및 eslint-config-airbnb 룰 설정
+- [x] lint-staged, husky 설치 및 자동화 설정
 - [x] emotion 스타일 라이브러리 설치
 - [x] reset css 적용
 - [x] .gitignore 추가
