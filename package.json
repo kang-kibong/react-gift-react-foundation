@@ -27,7 +27,9 @@
     "format": "prettier --write --cache src/**/*",
     "lint": "eslint --cache .",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "lint-staged": {
     "**/*.{tsx,ts,jsx,js}": [
@@ -38,7 +40,9 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:storybook/recommended",
+      "plugin:storybook/recommended"
     ]
   },
   "browserslist": {
@@ -54,14 +58,28 @@
     ]
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
     "@craco/craco": "^7.1.0",
+    "@storybook/addon-essentials": "^8.1.11",
+    "@storybook/addon-interactions": "^8.1.11",
+    "@storybook/addon-links": "^8.1.11",
+    "@storybook/addon-onboarding": "^8.1.11",
+    "@storybook/blocks": "^8.1.11",
+    "@storybook/preset-create-react-app": "^8.1.11",
+    "@storybook/react": "^8.1.11",
+    "@storybook/react-webpack5": "^8.1.11",
+    "@storybook/test": "^8.1.11",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-storybook": "^0.8.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
-    "typescript-eslint": "^7.14.1"
+    "prop-types": "^15.8.1",
+    "storybook": "^8.1.11",
+    "typescript-eslint": "^7.14.1",
+    "webpack": "^5.92.1"
   }
 }

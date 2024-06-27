@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '@components/Button/Button.tsx';
+import Button from '@components/Button/Button';
 import { Global } from '@emotion/react';
-import resetStyles from '@styles/resetStyles.ts';
+import resetStyles from '@styles/resetStyles';
 
 function App() {
   return (

@@ -14,7 +14,7 @@
 
 ## 🚀 2단계 - Storybook을 사용하여 재사용 가능한 컴포넌트 구현
 ### 📄 기능 목록
-- [] Stroybook 설치
+- [x] Stroybook 설치
 - [] Button 컴포넌트 구현
   - [] theme props에 따른 버튼 컬러와 디자인이 다르게 구현
   - [] size props에 따른 버튼의 크기를 다르게 구현(value가 responsive인 경우 미디어 쿼리에 따라 사이즈가 다르게 구현)

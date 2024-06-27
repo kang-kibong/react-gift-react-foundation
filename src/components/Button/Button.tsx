@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from './Button.styled.ts';
+import Layout from './Button.styled';
 
 interface ButtonProps {
   type: 'button' | 'submit';
