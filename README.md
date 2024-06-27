@@ -16,7 +16,7 @@
 ### 📄 기능 목록
 - [x] Stroybook 설치
 - [x] Button 컴포넌트 구현
-  - [] theme props에 따른 버튼 컬러와 디자인이 다르게 구현
+  - [x] theme props에 따른 버튼 컬러와 디자인이 다르게 구현
   - [x] size props에 따른 버튼의 크기를 다르게 구현(value가 responsive인 경우 미디어 쿼리에 따라 사이즈가 다르게 구현)
   - [] Button 기본 속성들을 모두 사용할 수 있게 구현
 - [] Input 컴포넌트 구현
