@@ -11,3 +11,20 @@
 - [x] .gitignore 추가
 - [x] 불필요한 코드 및 파일 정리
 - [x] 폴더 구조 생성
+
+## 🚀 2단계 - Storybook을 사용하여 재사용 가능한 컴포넌트 구현
+### 📄 기능 목록
+- [] Stroybook 설치
+- [] Button 컴포넌트 구현
+  - [] theme props에 따른 버튼 컬러와 디자인이 다르게 구현
+  - [] size props에 따른 버튼의 크기를 다르게 구현(value가 responsive인 경우 미디어 쿼리에 따라 사이즈가 다르게 구현)
+  - [] Button 기본 속성들을 모두 사용할 수 있게 구현
+- [] Input 컴포넌트 구현
+  - [] disabled props에 따른 비활성화 및 디자인 구현
+  - [] invalid props에 따른 값이 잘못되었음을 디자인하도록 구현
+  - [] size props에 따라 버튼의 크기를 다르게 구현(value가 responsive인 경우 미디어 쿼리에 따라 사이즈가 다르게 구현)
+  - [] Input 기본 속성들을 모두 사용할 수 있게 구현
+- [] Image 컴포넌트 구현
+  - [] ratio props에 따른 이미지 비율을 설정할 수 있도록 구현(value가 number로 16/9로 넘겨진 경우 16:9비율로 보여짐, square을 설정한 경우 정사각형으로 보여짐)
+  - [] raduis props에 따른 모서리를 둥글게 구현(value가 number인 경우 number만큼 모서리가 둥글게 적용, circle인 경우 원형으로 보여짐)
+  - [] Img 기본 속성들을 모두 사용할 수 있게 구현
