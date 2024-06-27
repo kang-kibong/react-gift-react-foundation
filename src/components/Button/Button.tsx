@@ -2,7 +2,7 @@ import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 import StyledButton from './Button.styled';
 import { ButtonTheme, ButtonSize } from './Button.types';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   theme?: ButtonTheme;
   size?: ButtonSize;
   children: ReactNode;
@@ -15,8 +15,3 @@ export default function Button({ theme = 'primary', size = 'medium', children, .
     </StyledButton>
   );
 }
-
-Button.defaultProps = {
-  theme: 'primary',
-  size: 'medium',
-};
