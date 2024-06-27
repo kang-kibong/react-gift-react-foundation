@@ -8,7 +8,9 @@ function App() {
     <>
       <Global styles={resetStyles} />
       <p>Hello World!</p>
-      <Button type="button" text="버튼" />
+      <Button theme="kakao" size="responsive">
+        hello World
+      </Button>
     </>
   );
 }

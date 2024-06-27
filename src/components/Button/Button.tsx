@@ -1,20 +1,22 @@
-import React from 'react';
-import Layout from './Button.styled';
+import React, { ButtonHTMLAttributes, ReactNode } from 'react';
+import StyledButton from './Button.styled';
+import { ButtonTheme, ButtonSize } from './Button.types';
 
-interface ButtonProps {
-  type: 'button' | 'submit';
-  text: string;
-  onClick?: () => void;
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  theme?: ButtonTheme;
+  size?: ButtonSize;
+  children: ReactNode;
 }
 
-export default function Button({ type, text, onClick }: ButtonProps) {
+export default function Button({ theme = 'primary', size = 'medium', children, ...props }: ButtonProps) {
   return (
-    <Layout type={type === 'button' ? 'button' : 'submit'} onClick={onClick}>
-      {text}
-    </Layout>
+    <StyledButton theme={theme} size={size} {...props}>
+      {children}
+    </StyledButton>
   );
 }
 
 Button.defaultProps = {
-  onClick: undefined,
+  theme: 'primary',
+  size: 'medium',
 };
