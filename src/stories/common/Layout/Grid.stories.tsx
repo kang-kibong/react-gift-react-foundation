@@ -49,3 +49,18 @@ NumberColumns.args = {
     </>
   ),
 };
+
+export const ResponsiveColumns = Template.bind({});
+ResponsiveColumns.args = {
+  gap: 10,
+  columns: { initial: 1, sm: 2, md: 3, lg: 4 },
+  children: (
+    <>
+      <div style={{ backgroundColor: 'lightgray', padding: '20px' }}>Item 1</div>
+      <div style={{ backgroundColor: 'lightgray', padding: '20px' }}>Item 2</div>
+      <div style={{ backgroundColor: 'lightgray', padding: '20px' }}>Item 3</div>
+      <div style={{ backgroundColor: 'lightgray', padding: '20px' }}>Item 4</div>
+      <div style={{ backgroundColor: 'lightgray', padding: '20px' }}>Item 5</div>
+    </>
+  ),
+};
