@@ -21,7 +21,7 @@
   - [x] Button 기본 속성들을 모두 사용할 수 있게 Storybook 구현
 - [x] Input 컴포넌트 구현
   - [x] disabled props에 따른 비활성화 및 디자인 구현
-  - [] invalid props에 따른 값이 잘못되었음을 디자인하도록 구현
+  - [x] invalid props에 따른 값이 잘못되었음을 디자인하도록 구현
   - [] size props에 따라 버튼의 크기를 다르게 구현(value가 responsive인 경우 미디어 쿼리에 따라 사이즈가 다르게 구현)
   - [] Input 기본 속성들을 모두 사용할 수 있게 구현
 - [] Image 컴포넌트 구현
