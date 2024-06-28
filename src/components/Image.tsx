@@ -8,8 +8,8 @@ export interface ImageProps extends ImgHTMLAttributes<HTMLDivElement> {
   ratio?: Ratio;
   radius?: Radius;
   src: string;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }
 
 export default function Image({ ratio, radius, src, width, height, ...props }: ImageProps) {

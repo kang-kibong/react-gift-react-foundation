@@ -14,7 +14,12 @@ function App() {
         hello World
       </Button>
       <Input disabled invalid size="responsive" />
-      <Image src="https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png" width={300} height={300} />
+      <Image
+        src="https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png"
+        ratio={16 / 9}
+        width={300}
+        height={300}
+      />
     </>
   );
 }
