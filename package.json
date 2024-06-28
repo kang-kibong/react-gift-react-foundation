@@ -38,14 +38,6 @@
       "prettier --write --cache"
     ]
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:storybook/recommended",
-      "plugin:storybook/recommended"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
