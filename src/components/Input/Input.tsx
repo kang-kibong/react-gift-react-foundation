@@ -24,6 +24,12 @@ const StyledInput = styled.input<StyledInputProps>`
   &:focus {
     border-color: #007bff;
   }
+
+  &:disabled {
+    background-color: #f5f5f5;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 `;
 
 export default function Input({ disabled, invalid = false, size = 'medium', ...props }: InputProps) {

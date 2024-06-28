@@ -12,7 +12,7 @@ function App() {
       <Button theme="kakao" size="responsive">
         hello World
       </Button>
-      <Input />
+      <Input disabled />
     </>
   );
 }
