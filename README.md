@@ -71,6 +71,10 @@ React는 상태 변화(state change)를 감지하고, 이에 따라 컴포넌트
 3. **리렌더링:** 상태 변화가 감지되면 해당 컴포넌트와 자식 컴포넌트가 다시 렌더링됩니다. React는 가상 DOM을 사용해 새로운 상태를 반영한 가상 DOM 트리를 생성하고, 이전 가상 DOM과 비교하여 실제 DOM에서 변경이 필요한 부분만 업데이트합니다.
 4. **최적화 기법:** React는 불필요한 리렌더링을 방지하기 위해 `shouldComponentUpdate`, `React.memo`, `useMemo`, `useCallback` 등을 사용하여 변경된 부분만 효율적으로 업데이트합니다.
 
-## 🤔 코드 리뷰 반영
+## 🛠️ 코드 리뷰 반영
 ### 📄 요구 사항
 - [x] babel-preset-react-app 설치
+- [] package.json의 eslintConfig 제거
+- [] testing library와 typescript 패키지 devdependencies로 변경
+- [] README에 초기 폴더 구조에 대한 설명 기재
+- [] lint 대상 변경
