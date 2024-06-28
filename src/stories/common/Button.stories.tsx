@@ -5,6 +5,7 @@ import Button, { ButtonProps } from '@components/common/Button';
 const meta: Meta<ButtonProps> = {
   title: 'common/Button',
   component: Button,
+  tags: ['autodocs'],
   argTypes: {
     theme: {
       control: { type: 'select', options: ['primary', 'kakao'] },

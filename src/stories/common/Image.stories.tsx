@@ -4,6 +4,7 @@ import Image, { ImageProps } from '@/components/common/Image';
 
 const meta: Meta<ImageProps> = {
   title: 'common/Image',
+  tags: ['autodocs'],
   component: Image,
 };
 

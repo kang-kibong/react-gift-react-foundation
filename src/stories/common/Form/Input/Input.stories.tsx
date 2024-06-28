@@ -5,6 +5,7 @@ import Input, { InputProps } from '@components/common/Form/Input/Input';
 const meta: Meta<InputProps> = {
   title: 'common/Form/Input/Input',
   component: Input,
+  tags: ['autodocs'],
   argTypes: {
     disabled: {
       control: { type: 'boolean' },
