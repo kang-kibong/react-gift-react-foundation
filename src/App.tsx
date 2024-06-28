@@ -12,7 +12,7 @@ function App() {
       <Button theme="kakao" size="responsive">
         hello World
       </Button>
-      <Input disabled invalid />
+      <Input disabled invalid size="responsive" />
     </>
   );
 }

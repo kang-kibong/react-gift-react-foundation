@@ -19,6 +19,30 @@ export default function Input({ disabled, invalid = false, size = 'medium', ...p
   return <StyledInput disabled={disabled} $size={size} $invalid={invalid} {...props} />;
 }
 
+const sizeStyles = {
+  small: css`
+    padding: 4px 8px;
+    font-size: 14px;
+  `,
+  medium: css`
+    padding: 8px 12px;
+    font-size: 16px;
+  `,
+  large: css`
+    padding: 12px 16px;
+    font-size: 18px;
+  `,
+  responsive: css`
+    padding: 8px 12px;
+    font-size: 16px;
+
+    @media (min-width: 768px) {
+      padding: 12px 16px;
+      font-size: 18px;
+    }
+  `,
+};
+
 const invalidStyle = css`
   border-color: #e74c3c;
   background-color: #fce4e4;
@@ -32,6 +56,7 @@ const StyledInput = styled.input<StyledInputProps>`
   width: 100%;
 
   ${({ $invalid }) => $invalid && invalidStyle}
+  ${({ $size }) => sizeStyles[$size]}
 
   &:focus {
     border-color: #007bff;
