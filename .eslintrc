@@ -32,7 +32,8 @@
     "import/no-unresolved": "off",
     "react/require-default-props": "off",
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error", { "variables": false , "functions": false,"classes": false}]
+    "@typescript-eslint/no-use-before-define": ["error", { "variables": false , "functions": false,"classes": false}],
+    "react/prop-types": "off"
   },
   "settings": {
     "import/resolver": {
