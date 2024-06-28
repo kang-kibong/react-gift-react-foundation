@@ -1,6 +1,28 @@
+import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
-import { ButtonSize, ButtonTheme, StyledButtonProps } from './Button.types';
+
+type ButtonTheme = 'primary' | 'kakao';
+type ButtonSize = 'small' | 'medium' | 'large' | 'responsive';
+
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  theme?: ButtonTheme;
+  size?: ButtonSize;
+  children: ReactNode;
+}
+
+interface StyledButtonProps {
+  theme: ButtonTheme;
+  size: ButtonSize;
+}
+
+export default function Button({ theme = 'primary', size = 'medium', children, ...props }: ButtonProps) {
+  return (
+    <StyledButton theme={theme} size={size} {...props}>
+      {children}
+    </StyledButton>
+  );
+}
 
 const getSizeStyles = (size: ButtonSize) => {
   switch (size) {
@@ -64,5 +86,3 @@ const StyledButton = styled.button<StyledButtonProps>`
   ${({ size }) => getSizeStyles(size)}
   ${({ theme }) => getThemeStyles(theme)}
 `;
-
-export default StyledButton;
