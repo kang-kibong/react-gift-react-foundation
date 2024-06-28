@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import GoodsItem, { GoodsItemProps } from '@components/GoodsItem/GoodsItem';
+import GoodsItem, { GoodsItemProps } from '@components/GoodsItem/GoodItem';
 
 const meta: Meta<GoodsItemProps> = {
   title: 'common/GoodsItem/Default',

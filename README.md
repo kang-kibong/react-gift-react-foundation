@@ -35,5 +35,6 @@
 - [x] Container 컴포넌트 구현
   - [x] Container 스토리북 구현
   - [x] FullScreen 스토리북 구현
-- [] Grid 컴포넌트를 구현
-  - [] Grid 스토리북 구현
+- [x] Grid 컴포넌트를 구현
+  - [] NumberColumns 스토리북 구현
+  - [] ResponsiveColumns 스토리북 구현

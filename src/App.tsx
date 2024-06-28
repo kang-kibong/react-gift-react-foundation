@@ -1,7 +1,7 @@
 import React from 'react';
 import { Global } from '@emotion/react';
 import resetStyles from '@styles/resetStyles';
-import GoodsItem from '@components/GoodsItem/GoodsItem';
+import GoodsItem from '@components/GoodsItem/GoodItem';
 import Container from './components/Layout/Container';
 
 function App() {
