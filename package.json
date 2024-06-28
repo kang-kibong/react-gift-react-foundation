@@ -19,7 +19,7 @@
     "test": "craco test",
     "eject": "craco eject",
     "format": "prettier --write --cache src/**/*",
-    "lint": "eslint --cache .",
+    "lint": "eslint --cache src/**/*",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "storybook": "storybook dev -p 6006",
