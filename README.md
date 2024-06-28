@@ -34,6 +34,6 @@
   - [x] Ranking 컴포넌트의 경우 rankingIndex Props를 추가로 넘겨 받음. 1~3까지는 분홍색, 나머지 숫자에는 회색의 랭킹 뱃지가 보여짐
 - [x] Container 컴포넌트 구현
   - [x] Container 스토리북 구현
-  - [] FullScreen 스토리북 구현
+  - [x] FullScreen 스토리북 구현
 - [] Grid 컴포넌트를 구현
   - [] Grid 스토리북 구현

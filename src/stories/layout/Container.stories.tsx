@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import Container, { ContainerProps } from '@components/Layout/Container';
 
 const meta: Meta<ContainerProps> = {
-  title: 'common/layout/Container',
+  title: 'common/Layout/Container',
   component: Container,
   tags: ['autodocs'],
   argTypes: {
@@ -33,7 +33,7 @@ const meta: Meta<ContainerProps> = {
 export default meta;
 
 const Template: StoryFn<ContainerProps> = function Tempalte({
-  maxWidth,
+  maxWidth = '100%',
   children,
   flexDirection,
   justifyContent,
@@ -54,4 +54,10 @@ const Template: StoryFn<ContainerProps> = function Tempalte({
 export const Default = Template.bind({});
 Default.args = {
   children: 'Hello, world!',
+};
+
+export const FullScreen = Template.bind({});
+FullScreen.args = {
+  children: 'Hello, world!',
+  maxWidth: '100%',
 };
