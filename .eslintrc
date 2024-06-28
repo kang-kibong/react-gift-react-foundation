@@ -31,7 +31,8 @@
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "import/no-unresolved": "off",
     "react/require-default-props": "off",
-    "no-use-before-define": "off"
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error", { "variables": false , "functions": false,"classes": false}]
   },
   "settings": {
     "import/resolver": {

@@ -4,7 +4,7 @@ import { css } from '@emotion/react';
 
 type InputSize = 'small' | 'medium' | 'large' | 'responsive';
 
-interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
+export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
   disabled?: boolean;
   invalid?: boolean;
   size?: InputSize;
