@@ -75,6 +75,6 @@ React는 상태 변화(state change)를 감지하고, 이에 따라 컴포넌트
 ### 📄 요구 사항
 - [x] babel-preset-react-app 설치
 - [x] package.json의 eslintConfig 제거
-- [] testing library와 typescript 패키지 devdependencies로 변경
+- [x] testing library와 typescript 패키지 devdependencies로 변경
 - [] README에 초기 폴더 구조에 대한 설명 기재
 - [] lint 대상 변경
