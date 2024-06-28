@@ -3,6 +3,7 @@ import { Global } from '@emotion/react';
 import resetStyles from '@styles/resetStyles';
 import Button from '@components/Button/Button';
 import Input from '@components/Input/Input';
+import Image from '@components/Image';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         hello World
       </Button>
       <Input disabled invalid size="responsive" />
+      <Image src="https://t1.kakaocdn.net/friends/www/talk/kakaofriends_talk_2018.png" width={300} height={300} />
     </>
   );
 }

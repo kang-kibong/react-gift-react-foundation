@@ -4,13 +4,16 @@ import styled from '@emotion/styled';
 type Ratio = number | 'square';
 type Radius = number | 'circle';
 
-export interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
+export interface ImageProps extends ImgHTMLAttributes<HTMLDivElement> {
   ratio?: Ratio;
   radius?: Radius;
+  src: string;
+  width: number;
+  height: number;
 }
 
-export default function Image({ ratio, radius, ...props }: ImageProps) {
-  return <StyledImage ratio={ratio} radius={radius} {...props} />;
+export default function Image({ ratio, radius, src, width, height, ...props }: ImageProps) {
+  return <StyledImageContainer ratio={ratio} radius={radius} src={src} width={width} height={height} {...props} />;
 }
 
 const ratioStyles = (ratio?: Ratio) => {
@@ -22,7 +25,7 @@ const ratioStyles = (ratio?: Ratio) => {
     return 'aspect-ratio: 1 / 1;';
   }
 
-  return ``;
+  return '';
 };
 
 const radiusStyles = (radius?: Radius) => {
@@ -37,11 +40,13 @@ const radiusStyles = (radius?: Radius) => {
   return '';
 };
 
-const StyledImage = styled.img<ImageProps>`
-  display: block;
-  width: 100%;
-  height: auto;
-
+const StyledImageContainer = styled.div<ImageProps>`
+  overflow: hidden;
+  background-image: url(${(props) => props.src});
+  background-size: cover;
+  background-position: center;
+  width: ${({ width }) => width}px;
+  height: ${({ height }) => height}px;
   ${({ ratio }) => ratioStyles(ratio)}
   ${({ radius }) => radiusStyles(radius)}
 `;
