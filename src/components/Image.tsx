@@ -13,8 +13,22 @@ export default function Image({ ratio, radius, ...props }: ImageProps) {
   return <StyledImage ratio={ratio} radius={radius} {...props} />;
 }
 
+const ratioStyles = (ratio?: Ratio) => {
+  if (typeof ratio === 'number') {
+    return `aspect-ratio: ${ratio};`;
+  }
+
+  if (ratio === 'square') {
+    return 'aspect-ratio: 1 / 1;';
+  }
+
+  return ``;
+};
+
 const StyledImage = styled.img<ImageProps>`
   display: block;
   width: 100%;
   height: auto;
+
+  ${({ ratio }) => ratioStyles(ratio)}
 `;
