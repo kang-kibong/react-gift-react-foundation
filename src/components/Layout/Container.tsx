@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import styled from '@emotion/styled';
 
-interface ContainerProps {
+export interface ContainerProps {
   maxWidth?: string;
   children: ReactNode;
   flexDirection?: 'row' | 'column';
