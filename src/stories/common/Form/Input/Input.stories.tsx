@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import Input, { InputProps } from '@components/Input/Input';
+import Input, { InputProps } from '@components/common/Form/Input/Input';
 
 const meta: Meta<InputProps> = {
-  title: 'common/Input',
+  title: 'common/Form/Input/Input',
   component: Input,
   argTypes: {
     disabled: {

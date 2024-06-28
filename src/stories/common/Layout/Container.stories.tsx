@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import Container, { ContainerProps } from '@components/Layout/Container';
+import Container, { ContainerProps } from '@/components/common/Layout/Container';
 
 const meta: Meta<ContainerProps> = {
   title: 'common/Layout/Container',

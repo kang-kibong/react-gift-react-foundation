@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import Image from '@components/Image';
+import Image from '@/components/common/Image';
 import Ranking from './Ranking';
 
 export interface GoodsItemProps {

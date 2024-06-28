@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import Image, { ImageProps } from '@components/Image';
+import Image, { ImageProps } from '@/components/common/Image';
 
 const meta: Meta<ImageProps> = {
   title: 'common/Image',
