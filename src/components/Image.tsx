@@ -25,10 +25,23 @@ const ratioStyles = (ratio?: Ratio) => {
   return ``;
 };
 
+const radiusStyles = (radius?: Radius) => {
+  if (typeof radius === 'number') {
+    return `border-radius: ${radius}px;`;
+  }
+
+  if (radius === 'circle') {
+    return 'border-radius: 50%;';
+  }
+
+  return '';
+};
+
 const StyledImage = styled.img<ImageProps>`
   display: block;
   width: 100%;
   height: auto;
 
   ${({ ratio }) => ratioStyles(ratio)}
+  ${({ radius }) => radiusStyles(radius)}
 `;

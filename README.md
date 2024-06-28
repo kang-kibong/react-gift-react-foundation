@@ -26,5 +26,5 @@
   - [x] Input 기본 속성들을 모두 사용할 수 있게 구현
 - [x] Image 컴포넌트 구현
   - [x] ratio props에 따른 이미지 비율을 설정할 수 있도록 구현(value가 number로 16/9로 넘겨진 경우 16:9비율로 보여짐, square을 설정한 경우 정사각형으로 보여짐)
-  - [] raduis props에 따른 모서리를 둥글게 구현(value가 number인 경우 number만큼 모서리가 둥글게 적용, circle인 경우 원형으로 보여짐)
+  - [x] raduis props에 따른 모서리를 둥글게 구현(value가 number인 경우 number만큼 모서리가 둥글게 적용, circle인 경우 원형으로 보여짐)
   - [] Img 기본 속성들을 모두 사용할 수 있게 구현
