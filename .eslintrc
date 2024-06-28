@@ -30,7 +30,8 @@
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "import/no-unresolved": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "no-use-before-define": "off"
   },
   "settings": {
     "import/resolver": {
