@@ -1,20 +1,23 @@
+import React from 'react';
 import styled from '@emotion/styled';
-import React, { ReactNode } from 'react';
 import Image from '@components/Image';
+import Ranking from './Ranking';
 
 export interface GoodsItemProps {
   imageSrc: string;
   subtitle: string;
   title: string;
   amount: number;
-  children: ReactNode;
+  rankingIndex?: number;
 }
 
-export default function GoodsItem({ imageSrc, subtitle, title, amount, children, ...props }: GoodsItemProps) {
+export default function GoodsItem({ imageSrc, subtitle, title, amount, rankingIndex, ...props }: GoodsItemProps) {
+  const imageSize = rankingIndex ? 160 : 120;
+
   return (
-    <StyledGoodsItem {...props}>
-      {children}
-      <Image src={imageSrc} width={120} height={120} radius={4} />
+    <StyledGoodsItem rankingIndex={rankingIndex} {...props}>
+      {rankingIndex && <Ranking rankingIndex={rankingIndex} />}
+      <Image src={imageSrc} width={imageSize} height={imageSize} radius={4} />
       <Content>
         <SubTitle>{subtitle}</SubTitle>
         <Title>{title}</Title>
@@ -27,8 +30,9 @@ export default function GoodsItem({ imageSrc, subtitle, title, amount, children,
   );
 }
 
-const StyledGoodsItem = styled.div`
-  width: 120px;
+const StyledGoodsItem = styled.div<{ rankingIndex?: number }>`
+  position: relative;
+  width: ${({ rankingIndex }) => (rankingIndex ? '160px' : '120px')};
 `;
 
 const Content = styled.div`
