@@ -11,6 +11,16 @@
 - [x] .gitignore 추가
 - [x] 불필요한 코드 및 파일 정리
 - [x] 폴더 구조 생성
+  - apis: Axios 인스턴스 설정 파일 등 API 관련 설정 파일을 관리합니다.
+  - assets: 이미지, 폰트, 아이콘 등의 정적 파일을 관리합니다.
+  - components: 컴포넌트를 모아놓은 디렉토리입니다.
+    - common: 공통 컴포넌트를 모아놓은 디렉토리입니다.
+  - hooks: 커스텀 훅을 모아놓은 디렉토리입니다.
+  - pages: 페이지 컴포넌트를 모아놓은 디렉토리입니다. 각 페이지는 일반적으로 라우팅의 엔드포인트가 됩니다.
+  - store: 애플리케이션의 전체 상태 관리를 위한 스토어 파일입니다.
+  - styles: 글로벌 스타일 설정 파일입니다. 기본 스타일을 재설정하거나 공통 스타일을 정의합니다.
+  - utils: 유틸리티 함수들을 모아놓은 파일입니다.
+    - constants: 애플리케이션 전반에서 사용되는 상수들을 정의합니다.
 
 ## 📕 2단계 - Storybook을 사용하여 재사용 가능한 컴포넌트 구현
 ### 📄 기능 목록
@@ -76,5 +86,5 @@ React는 상태 변화(state change)를 감지하고, 이에 따라 컴포넌트
 - [x] babel-preset-react-app 설치
 - [x] package.json의 eslintConfig 제거
 - [x] testing library와 typescript 패키지 devdependencies로 변경
-- [] README에 초기 폴더 구조에 대한 설명 기재
+- [x] README에 초기 폴더 구조에 대한 설명 기재
 - [] lint 대상 변경
