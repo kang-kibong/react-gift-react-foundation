@@ -30,7 +30,7 @@
   - [x] Img 기본 속성들을 모두 사용할 수 있게 구현
 - [] GoodsItem 컴포넌트 구현
   - [] Default 형태와 Ranking 형태의 컴포넌트를 각각 구현 (자세한 디자인은 스토리북 참고)
-  - [] 공통으로 imageSrc, subtitle, title, amount Props를 넘겨 받음
+  - [x] 공통으로 imageSrc, subtitle, title, amount Props를 넘겨 받음
   - [] Ranking 컴포넌트의 경우 rankingIndex Props를 추가로 넘겨 받음. 1~3까지는 분홍색, 나머지 숫자에는 회색의 랭킹 뱃지가 보여짐
 - [] Grid 컴포넌트 구현
 - [] Container 컴포넌트를 구현
