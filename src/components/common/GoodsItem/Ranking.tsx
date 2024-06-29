@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
+const TOP_RANKING_THRESHOLD = 3;
+
 interface RankingProps {
   rankingIndex: number;
 }
@@ -27,5 +29,6 @@ const Badge = styled.div<{ rankingIndex: number }>`
   top: 4px;
   left: 4px;
   color: rgb(255, 255, 255);
-  background-color: ${({ rankingIndex }) => (rankingIndex <= 3 ? 'rgb(253, 115, 100)' : 'rgb(187, 187, 187)')};
+  background-color: ${({ rankingIndex }) =>
+    rankingIndex <= TOP_RANKING_THRESHOLD ? 'rgb(253, 115, 100)' : 'rgb(187, 187, 187)'};
 `;
