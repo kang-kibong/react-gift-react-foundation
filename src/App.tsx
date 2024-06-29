@@ -1,6 +1,6 @@
 import React from 'react';
 import { Global } from '@emotion/react';
-import resetStyles from '@styles/resetStyles';
+import resetStyles from '@/assets/styles/resetStyles';
 
 function App() {
   return (
