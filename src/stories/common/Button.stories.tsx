@@ -8,10 +8,10 @@ const meta: Meta<ButtonProps> = {
   tags: ['autodocs'],
   argTypes: {
     theme: {
-      control: { type: 'select', options: ['primary', 'kakao'] },
+      control: { type: 'select', options: ['kakao', 'outline', 'black', 'lightGray', 'darkGray'] },
     },
     size: {
-      control: { type: 'select', options: ['small', 'medium', 'large', 'responsive'] },
+      control: { type: 'select', options: ['small', 'large', 'responsive'] },
     },
   },
 };
@@ -25,6 +25,6 @@ const Template: StoryFn<ButtonProps> = function Tempalte(args: ButtonProps) {
 export const Default = Template.bind({});
 Default.args = {
   children: '버튼 텍스트',
-  theme: 'primary',
-  size: 'medium',
+  theme: 'kakao',
+  size: 'large',
 };
