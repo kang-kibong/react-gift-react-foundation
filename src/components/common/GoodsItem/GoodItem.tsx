@@ -3,6 +3,9 @@ import styled from '@emotion/styled';
 import Image from '@/components/common/Image';
 import Ranking from './Ranking';
 
+const IMAGE_SIZE_LARGE = 160;
+const IMAGE_SIZE_SMALL = 120;
+
 export interface GoodsItemProps {
   imageSrc: string;
   subtitle: string;
@@ -12,7 +15,7 @@ export interface GoodsItemProps {
 }
 
 export default function GoodsItem({ imageSrc, subtitle, title, amount, rankingIndex, ...props }: GoodsItemProps) {
-  const imageSize = rankingIndex ? 160 : 120;
+  const imageSize = rankingIndex ? IMAGE_SIZE_LARGE : IMAGE_SIZE_SMALL;
 
   return (
     <StyledGoodsItem rankingIndex={rankingIndex} {...props}>
@@ -32,7 +35,7 @@ export default function GoodsItem({ imageSrc, subtitle, title, amount, rankingIn
 
 const StyledGoodsItem = styled.div<{ rankingIndex?: number }>`
   position: relative;
-  width: ${({ rankingIndex }) => (rankingIndex ? '160px' : '120px')};
+  width: ${({ rankingIndex }) => (rankingIndex ? `${IMAGE_SIZE_LARGE}px` : `${IMAGE_SIZE_SMALL}px`)};
 `;
 
 const Content = styled.div`
