@@ -1,6 +1,5 @@
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-import Container, { ContainerProps } from '@/components/common/Layout/Container';
+import { Meta, StoryObj } from '@storybook/react';
+import Container, { ContainerProps } from '@components/common/Layout/Container/Container';
 
 const meta: Meta<ContainerProps> = {
   title: 'common/Layout/Container',
@@ -32,32 +31,17 @@ const meta: Meta<ContainerProps> = {
 
 export default meta;
 
-const Template: StoryFn<ContainerProps> = function Tempalte({
-  maxWidth = '100%',
-  children,
-  flexDirection,
-  justifyContent,
-  alignItems,
-}: ContainerProps) {
-  return (
-    <Container
-      maxWidth={maxWidth}
-      flexDirection={flexDirection}
-      justifyContent={justifyContent}
-      alignItems={alignItems}
-    >
-      {children}
-    </Container>
-  );
+type Story = StoryObj<ContainerProps>;
+
+export const Default: Story = {
+  args: {
+    children: 'Hello, world!',
+  },
 };
 
-export const Default = Template.bind({});
-Default.args = {
-  children: 'Hello, world!',
-};
-
-export const FullScreen = Template.bind({});
-FullScreen.args = {
-  children: 'Hello, world!',
-  maxWidth: '100%',
+export const FullScreen: Story = {
+  args: {
+    children: 'Hello, world!',
+    maxWidth: '100%',
+  },
 };
