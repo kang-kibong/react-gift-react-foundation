@@ -23,7 +23,8 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_4bfbd24f88b6ca4"
   },
   "lint-staged": {
     "**/*.{tsx,ts,jsx,js}": [
@@ -63,6 +64,7 @@
     "@types/node": "^16.18.101",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "chromatic": "^11.5.4",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-alias": "^1.1.2",
