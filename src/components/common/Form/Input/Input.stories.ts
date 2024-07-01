@@ -1,5 +1,4 @@
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import Input, { InputProps } from '@components/common/Form/Input/Input';
 
 const meta: Meta<InputProps> = {
@@ -24,14 +23,12 @@ const meta: Meta<InputProps> = {
 
 export default meta;
 
-const Template: StoryFn<InputProps> = function Tempalte(args: InputProps) {
-  return <Input {...args} />;
-};
+type Story = StoryObj<InputProps>;
 
-export const Default = Template.bind({});
-
-Default.args = {
-  disabled: false,
-  invalid: false,
-  size: 'medium',
+export const Default: Story = {
+  args: {
+    disabled: false,
+    invalid: false,
+    size: 'medium',
+  },
 };
