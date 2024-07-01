@@ -23,8 +23,7 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "chromatic": "npx chromatic"
+    "build-storybook": "storybook build"
   },
   "lint-staged": {
     "**/*.{tsx,ts,jsx,js}": [
