@@ -24,7 +24,7 @@
     "lint-staged": "lint-staged",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_4bfbd24f88b6ca4"
+    "chromatic": "npx chromatic"
   },
   "lint-staged": {
     "**/*.{tsx,ts,jsx,js}": [
